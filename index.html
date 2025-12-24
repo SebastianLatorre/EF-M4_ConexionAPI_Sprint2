@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Buscador de recetas</title>
+        <link rel="icon" href="./assets/images/Chef.png" type="image/png" />
+
+        <!-- Estilos CSS -->
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <!-- Contenido -->
+        <!-- Hero Section -->
+        <section class="hero text-white d-flex align-items-center" style="background-image: url('./assets/images/pexels-enginakyurt-1435904.jpg'); background-size: cover; background-position: center">
+            <div class="container text-center py-5">
+                <h1 class="display-4 fw-bold">Gourmet Go</h1>
+                <h2 class="lead mb-4">Busca tus recetas por ingredientes.</h2>
+                <div class="container my-4">
+                    <form id="myForm" class="d-flex gap-2" role="search">
+                        <input id="searchInput" name="search" class="form-control" type="search" placeholder="Prueba con: arroz, carne, pollo, ajo, huevos... y presiona enter ↵" aria-label="Search" />
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!--Contenedor de Recetas-->
+        <div class="container my-4">
+            <div class="alert alert-info text-center mb-4" role="alert">Mostrando <strong id="count">0</strong> recetas</div>
+            <div id="recetas-container" class="row g-4"></div>
+        </div>
+
+        <!-- Modal para mostrar detalles de la receta -->
+        <div class="modal fade" id="recetaModal" tabindex="-1" aria-labelledby="recetaModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="recetaModalLabel">Nombre de la Receta</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img id="modal-imagen" src="" alt="" class="img-fluid rounded mb-3" />
+                        <h6 class="fw-bold">Ingredientes:</h6>
+                        <ul id="modal-ingredientes" class="mb-3"></ul>
+                        <h6 class="fw-bold">Instrucciones:</h6>
+                        <p id="modal-instrucciones" class="text-justify"></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Script JS -->
+        <script src="./assets/js/app.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
