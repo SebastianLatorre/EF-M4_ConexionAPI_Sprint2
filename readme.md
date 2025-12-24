@@ -2,7 +2,7 @@
 
 ## Sprint 2: Desarrollo de Funcionalidad y Conexión a API
 
-(Demo - GitHubPages)[https://sebastianlatorre.github.io/EF-M4_ConexionAPI_Sprint2/]
+(Demo - GitHubPages)-[https://sebastianlatorre.github.io/EF-M4_ConexionAPI_Sprint2/]
 
 ## Briefing del Cliente: "Gourmet Go" - Fase 2
 
